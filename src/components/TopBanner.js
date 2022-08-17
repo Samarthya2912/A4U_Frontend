@@ -7,7 +7,7 @@ const TopBanner = () => {
         flexDirection: "row",
         justifyContent: "space-evenly",
         alignItems: "center",
-        backgroundColor: "green",
+        backgroundColor: "rgba(11, 110, 79, 1)",
         color: "white",
         padding: "20px 0"
     }}>
@@ -17,8 +17,8 @@ const TopBanner = () => {
             justifyContent: "flex-start",
             alignItems: "flex-start",
         }}>
-            <h3 style={{ padding: 0, margin: 0 }}>Welcome to</h3>
-            <h1 style={{ padding: 0, margin: 0 }}>AgriAbhyaas</h1>
+            <h2 style={{ padding: 0, margin: 0 }}>Welcome to</h2>
+            <h1 style={{ padding: 0, margin: "10px 0" }}>AgriAbhyaas</h1>
             <p  style={{ padding: 0, margin: 0, display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
             <span>As they say, practice makes you perfect.</span>
             <span>AgriAbhyaas is your one stop platform to practice
