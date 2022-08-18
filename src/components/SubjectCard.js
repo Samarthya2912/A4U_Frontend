@@ -10,7 +10,10 @@ const SubjectCard = (props) => {
         margin: "10px"
     }}>
         <img src={props.image} alt="" />
-        <span>{props.title}</span>
+        <span style={{
+            fontWeight: "bold",
+            fontSize: "larger"
+        }}>{props.title}</span>
     </div>
   )
 }
