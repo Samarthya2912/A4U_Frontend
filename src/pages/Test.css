@@ -43,7 +43,7 @@
 }
 
 .collapsible-topic-list {
-    border: solid black 1px;
+    /* border: solid black 1px; */
     max-width: 20vw;
     font-size: xx-large;
 }
@@ -65,6 +65,10 @@
 .collapsible-topic-list__subtopics {
     overflow: hidden;
     font-size: large;
+}
+
+.problem {
+    margin-bottom: 50px;
 }
 
 .problem__problem-desc {
@@ -91,4 +95,35 @@
 .problem__button-group {
     display: flex;
     justify-content: center;
+}
+
+.quiz-section {
+    max-width: 60vw;
+    font-weight: bold;
+    padding: 20px 50px;
+    background-color: #e5fff7;
+    border: solid lightblue;
+    margin: 30px;
+}
+
+.quiz-component-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quiz-component-wrapper p {
+    font-size: larger;
+    font-weight: bolder;
+    max-width: 80%;
+    text-align: left;
+}
+
+.quiz-component-wrapper hr {
+    border: solid black 1px;
+    width: 90%;
+}
+
+.quiz-component {
+    display: flex;
 }

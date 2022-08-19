@@ -5,6 +5,7 @@ import CollapsibleTopicList from "../components/CollapsibleTopicList";
 import Problem from "../components/QuizSection";
 import Button from "../components/shared/Button";
 import "./Test.css"
+import QuizComponent from "../components/QuizComponent";
 
 
 const Test = () => {
@@ -13,8 +14,9 @@ const Test = () => {
         {/* <TopBanner /> */}
         {/* <SubjectCarousel /> */}
         {/* <CollapsibleTopicList /> */}
-        <Problem />
+        {/* <Problem /> */}
         {/* <Button /> */}
+        {/* <QuizComponent /> */}
     </div>
   )
 }

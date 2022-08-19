@@ -1,4 +1,3 @@
-import { maxWidth } from '@mui/system';
 import React from 'react'
 import { useState } from 'react'
 import quiz_problems from '../data/quiz_problems'
@@ -35,9 +34,9 @@ const Problem = (props) => {
                 }
             </div>
             <div className="problem__button-group">
-                <Button onClick={ showSolutionHandler }>Show Solution</Button>
-                <Button>Join the discussion</Button>
-                <Button>Save for later</Button>
+                <Button onClick={ showSolutionHandler } backgroundColor="#13AE7E">Answer and Solution</Button>
+                <Button backgroundColor="#5F5F5F">Join the discussion</Button>
+                <Button backgroundColor="#3362AB">Save for later</Button>
             </div>
             {
                 showSolution && <div className="problem__explanation" style={{
@@ -54,10 +53,7 @@ const Problem = (props) => {
 
 const QuizSection = () => {
     return (
-        <div style={{
-            maxWidth: "60vw",
-            fontWeight: "bold"
-        }}>
+        <div className="quiz-section">
             {
                 quiz_problems.map((problem, index) => {
                     return <Problem key={index} qno={index+1} {...problem} />
