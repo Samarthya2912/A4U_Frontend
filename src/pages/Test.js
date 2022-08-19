@@ -6,6 +6,8 @@ import Problem from "../components/QuizSection";
 import Button from "../components/shared/Button";
 import "./Test.css"
 import QuizComponent from "../components/QuizComponent";
+import OtherPackages from "../components/OtherPackages";
+import StarRating from "../components/shared/StarRating";
 
 
 const Test = () => {
@@ -17,6 +19,8 @@ const Test = () => {
         {/* <Problem /> */}
         {/* <Button /> */}
         {/* <QuizComponent /> */}
+        <OtherPackages />
+        {/* <StarRating rating={3} /> */}
     </div>
   )
 }

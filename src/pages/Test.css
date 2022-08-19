@@ -127,3 +127,46 @@
 .quiz-component {
     display: flex;
 }
+
+.star-rating {
+    color: goldenrod;
+}
+
+.star-rating p {
+    display: inline;
+    margin: 0 5px;
+}
+
+.card {
+    display: flex;
+    max-width: 40vw;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.card__image {
+    margin: 10px 0;
+}
+
+.card__topics {
+    margin: 5px 0;
+}
+
+.card__title {
+    color: green;
+}
+
+.card__enrolled {
+    font-weight: bolder;
+    margin: 5px 0;
+}
+
+.card__rating {
+    display: flex;
+}
+
+.card__rating > * {
+    margin: 0 10px 0 0;
+}
