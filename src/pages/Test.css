@@ -1,0 +1,94 @@
+.top-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(11, 110, 79, 1);
+    color: white;
+    padding: 30px 0;
+}
+
+.top-banner__image {
+    width: 35%;
+}
+
+.top-banner__paragraph {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subject-carousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 87vw;
+    margin: 5vw;
+    text-align: center;
+}
+
+.subject-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.subject-card__title {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.collapsible-topic-list {
+    border: solid black 1px;
+    max-width: 20vw;
+    font-size: xx-large;
+}
+
+.collapsible-topic-list__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+}
+
+.collapsible-topic-list__list-item_button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+.collapsible-topic-list__subtopics {
+    overflow: hidden;
+    font-size: large;
+}
+
+.problem__problem-desc {
+    display: flex;
+    align-items: flex-start;
+}
+
+.problem__option {
+    display: flex;
+    align-items: flex-start;
+    border: solid black 1px;
+    padding: 17px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.problem__explanation {
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.problem__button-group {
+    display: flex;
+    justify-content: center;
+}

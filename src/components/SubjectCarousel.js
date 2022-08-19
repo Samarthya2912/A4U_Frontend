@@ -4,13 +4,7 @@ import SubjectCard from './SubjectCard'
 
 const SubjectCarousel = () => {
   return (
-    <div style={{
-        display: "flex",
-        flexDirection: "row",
-        overflowX: "scroll",
-        width: "87vw",
-        margin: "5vw"
-    }}>
+    <div className="subject-carousel">
         {
             subjects.map((sub,index) => <SubjectCard key={index} {...sub} />)
         }

@@ -10,39 +10,37 @@ const Problem = (props) => {
 
     const wrong = "rgba(255,0,0,0.2)", right = "rgba(0,255,0,0.2)", markedColor = "rgba(0,0,255,0.1)", notMarkedColor = "white";
 
+    const markOption = (index) => {
+        if(!showSolution) setMarked(index);
+    }
+
+    const showSolutionHandler = () => {
+        if(marked !== 1000) setShowSolution(true);
+    }
+
     return (
-        <div>
-            <p style={{ display: "flex", alignItems: "flex-start" }}>{"Q"+props.qno}. {props.question}</p>
+        <div className="problem">
+            <p className="problem__problem-desc">{"Q"+props.qno}. {props.question}</p>
             <div>
                 {
                     props.options.map((opt, index) => {
                         return (
-                            <div onClick={() => { setMarked(index) }} key={index} style={{
-                                display: "flex", alignItems: "flex-start",
-                                border: "solid black 1px",
-                                padding: "17px",
-                                margin: "5px 0",
-                                borderRadius: "5px",
-                                cursor: "pointer",
-                                backgroundColor: (showSolution && index === marked ? (marked === props.correct_option ? right : wrong) : (marked === index? markedColor:notMarkedColor))
+                            <div className="problem__option" onClick={() => { markOption(index) }} key={index} style={{
+                                backgroundColor: (showSolution? (index === props.correct_option? right: (marked === index? wrong:notMarkedColor)): (marked === index? markedColor:notMarkedColor))
                             }}>
                                 <input checked={index === marked} type="radio" key={index} /><span>{opt}</span>
-                            </div>)
+                            </div>
+                        )
                     })
                 }
             </div>
-            <div style={{
-                display: "flex", justifyContent: "center"
-            }}>
-                <Button onClick={() => setShowSolution(true)}>Show Solution</Button>
+            <div className="problem__button-group">
+                <Button onClick={ showSolutionHandler }>Show Solution</Button>
                 <Button>Join the discussion</Button>
                 <Button>Save for later</Button>
             </div>
             {
-                showSolution && <div style={{
-                    border: "solid black 1px",
-                    padding: "10px",
-                    borderRadius: "5px",
+                showSolution && <div className="problem__explanation" style={{
                     backgroundColor: (marked === props.correct_option? right:wrong)
                 }}>
                     <h3>Explanation</h3>

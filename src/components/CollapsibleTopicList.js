@@ -5,12 +5,7 @@ import ChevronIcon from './ChevronIcon'
 
 const CollapsibleTopicList = () => {
   return (
-    <ul style={{
-      border: "solid black 1px",
-      maxWidth: "20vw",
-      fontSize: "xx-large",
-      fontFamily: "Roboto"
-    }}>
+    <ul className="collapsible-topic-list">
       {topics.map((topic, index) =>
         <ListItem key={index} {...topic} default={index === 0} />
       )}
@@ -26,24 +21,12 @@ const ListItem = (props) => {
   }
 
   return (
-    <li style={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "flex-start",
-      margin: "10px 0"
-    }}>
-      <button style={{
-        background: "transparent",
-        border: "none",
-        cursor: "pointer",
-        fontSize: "large"
-      }} onClick={collapseHandler}><span style={{
+    <li className="collapsible-topic-list__list-item">
+      <button className="collapsible-topic-list__list-item_button" onClick={collapseHandler}><span style={{
         color: visible ? "dodgerblue" : "black",
       }}>{props.title} {props.subtopics.length ? <ChevronIcon up={visible} /> : ""}</span></button>
-      <ul style={{
+      <ul className="collapsible-topic-list__subtopics" style={{
         height: visible ? "auto" : "0",
-        overflow: "hidden",
-        fontSize: "large"
       }}>
         {props.subtopics.map((subtopic, index) => {
           return <li key={index}>{subtopic}</li>

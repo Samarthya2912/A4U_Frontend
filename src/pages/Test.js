@@ -4,6 +4,8 @@ import SubjectCarousel from "../components/SubjectCarousel";
 import CollapsibleTopicList from "../components/CollapsibleTopicList";
 import Problem from "../components/QuizSection";
 import Button from "../components/shared/Button";
+import "./Test.css"
+
 
 const Test = () => {
   return (

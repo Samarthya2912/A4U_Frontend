@@ -2,18 +2,9 @@ import React from 'react'
 
 const SubjectCard = (props) => {
   return (
-    <div style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignContent: "center",
-        margin: "10px"
-    }}>
+    <div className="subject-card">
         <img src={props.image} alt="" />
-        <span style={{
-            fontWeight: "bold",
-            fontSize: "larger"
-        }}>{props.title}</span>
+        <span className="subject-card__title">{props.title}</span>
     </div>
   )
 }
