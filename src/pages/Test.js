@@ -13,14 +13,10 @@ import StarRating from "../components/shared/StarRating";
 const Test = () => {
   return (
     <div>
-        {/* <TopBanner /> */}
-        {/* <SubjectCarousel /> */}
-        {/* <CollapsibleTopicList /> */}
-        {/* <Problem /> */}
-        {/* <Button /> */}
-        {/* <QuizComponent /> */}
+        <TopBanner />
+        <SubjectCarousel />
+        <QuizComponent />
         <OtherPackages />
-        {/* <StarRating rating={3} /> */}
     </div>
   )
 }
