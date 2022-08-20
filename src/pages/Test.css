@@ -201,3 +201,7 @@
     font-weight: bolder;
 }
 
+.other-packages__header {
+    color: rgba(11, 110, 79, 1);
+    margin: 20px 40px;
+}
