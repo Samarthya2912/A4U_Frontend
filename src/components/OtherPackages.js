@@ -57,6 +57,8 @@ const Card = (props) => {
 const OtherPackages = () => {
   const [showIndex, setShowIndex] = useState(0);
 
+  console.log({...other_packages[showIndex]});
+
   return (
     <div className="other-packages-wrapper">
       <h1 className="other-packages__header">Checkout Other Packages</h1>

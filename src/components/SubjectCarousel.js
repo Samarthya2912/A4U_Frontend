@@ -7,7 +7,7 @@ const SubjectCarousel = () => {
   return (
     <div className="subject-carousel">
         {
-            subjects.map((sub,index) => <Link to={`${sub.title}/problems`}><SubjectCard key={index} {...sub} /></Link>)
+            subjects.map((sub,index) => <Link key={index} to={`${sub.title}/problems`}><SubjectCard {...sub} /></Link>)
         }
     </div>
   )
