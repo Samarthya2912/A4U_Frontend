@@ -4,7 +4,7 @@ const subjects = [
         title: "Mathematics",
     },
     {
-        image: "assets/science_thumbnail.svg",
+        image: "assets/science_thumbnail.png",
         title: "Science"
     },
     {
@@ -12,7 +12,7 @@ const subjects = [
         title: "Mathematics",
     },
     {
-        image: "assets/science_thumbnail.svg",
+        image: "assets/science_thumbnail.png",
         title: "Science"
     },
     {
@@ -20,7 +20,7 @@ const subjects = [
         title: "Mathematics",
     },
     {
-        image: "assets/science_thumbnail.svg",
+        image: "assets/science_thumbnail.png",
         title: "Science"
     },
     {
@@ -28,7 +28,7 @@ const subjects = [
         title: "Mathematics",
     },
     {
-        image: "assets/science_thumbnail.svg",
+        image: "assets/science_thumbnail.png",
         title: "Science"
     }
 ];
