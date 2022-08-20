@@ -1,0 +1,35 @@
+.side-nav {
+    --theme: rgba(11, 110, 79, 1);
+    background-color: var(--theme);
+    padding: 20px 50px;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    min-height: 100vh;
+    /* position: absolute; */
+    min-width: 12.5vw;
+    max-width: 12.5vw;    
+    height: 230vh;
+}
+
+.side-nav__topics {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-nav__topics__topic {
+    /* border: solid black 1px; */
+    padding: 10px 20px;
+    font-size: large;
+    border-radius: 7px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.side-nav__topics__topic.selected {
+    background-color: white;
+    color: var(--theme);
+}
+
+.questions-page__quiz {
+    display: flex;
+}
